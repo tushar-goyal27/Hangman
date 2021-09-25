@@ -1,0 +1,43 @@
+body {
+  text-align: center;
+}
+
+.container {
+  margin: 50px;
+}
+
+.letter-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.alphabet {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 200, 0, 0.5);
+}
+
+
+.alphabet:hover {
+  background-color: rgba(0, 100, 0, 0.5);
+}
+
+.clue-next {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
