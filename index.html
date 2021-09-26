@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Hangman</h1>
+    <h1><span class="heading">Hangman</span></h1>
     <div class="container" id="buttons">
     </div>
     <div class="container" id="category-box">
@@ -16,12 +16,12 @@
       <h3 id="word">_ _ _ _ _</h3>
     </div>
     <div class="container" id="lives-box">
-      <h3>You have <span id="lives">10</span> lives left!</h3>
+      <h3 id="gameover">You have <span class="bottom-color"><span id="lives">10</span> lives</span> left!</h3>
     </div>
     <div class="container" id="clue-box">
       <h3>Clue: <span id="clue"></span></h3>
     </div>
-    <canvas id="hangman" width="200" height="200"></canvas>
+    <canvas id="hangman" width="150" height="200" style="border:1px solid #000000;"></canvas>
     <div class="clue-next">
       <button type="button" name="Clue" id="clue-button">Clue</button>
       <button type="button" name="Play Again" id="play-button">Play Again</button>

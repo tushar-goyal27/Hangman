@@ -1,14 +1,26 @@
 body {
   text-align: center;
+  font-family: 'Azeret Mono', monospace;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 50px;
+  color: rgb(0, 46, 77);
+}
+
+.heading {
+  border-bottom: solid 6px rgb(134, 0, 179);
 }
 
 .container {
-  margin: 50px;
+  margin: 30px;
 }
 
 .letter-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -16,21 +28,60 @@ body {
   display: flex;
   height: 40px;
   width: 40px;
-  margin: 5px;
+  margin: 10px;
+  font-size: 20px;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 200, 0, 0.5);
+  color: rgb(242, 242, 242);
+  background-color: rgb(0, 51, 77);
+  border-radius: 5px;
+  border: solid 1px rgb(0, 51, 77);
+  transition-duration: 0.1s;
 }
 
+.used {
+  background-color: rgb(0, 102, 153);
+}
 
 .alphabet:hover {
-  background-color: rgba(0, 100, 0, 0.5);
+  background-color: rgba(0, 102, 154);
+  border: solid 1px rgb(0, 51, 77);
 }
 
 .clue-next {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+#category-box {
+  font-size: 25px;
+}
+
+#category {
+  border-bottom: solid 4px rgb(230, 138, 0);
+}
+
+#word-box {
+  font-size: 40px;
+  color: rgb(0, 46, 77);
+}
+
+#lives-box {
+  font-size: 20px;
+}
+
+.bottom-color {
+  border-bottom: solid 5px rgb(0, 179, 60);
+}
+
+#clue-box {
+  font-size: 30px;
+  color: rgb(0, 46, 77);
+}
+
+#clue {
+  border-bottom: solid 5px rgb(128, 191, 255);
 }
 
 button {
@@ -40,4 +91,16 @@ button {
   margin: 20px;
   justify-content: center;
   align-items: center;
+  background-color: rgb(0, 51, 102);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: black;
+  border: solid 3px rgb(0, 51, 102);
 }
